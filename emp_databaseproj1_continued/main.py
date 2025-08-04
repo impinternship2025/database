@@ -17,10 +17,10 @@ def main():
         choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
-            emp_id = int(input("Enter employee ID to unassign: "))
-            project_id = int(input("Enter project ID to unassign: "))
-            unassign_project(emp_id, project_id)
-            print("Project unassigned successfully.")
+            emp_name = input("Enter employee name to unassign: ")
+            project_name = input("Enter project name to unassign: ")
+            unassign_project(emp_name, project_name)
+            print(" Project unassigned successfully.")
 
         elif choice == "2":
             projects = get_projects_with_assignments()
